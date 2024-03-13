@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css?v=10022499">
+
+    <!-- Icon -->
+    <link rel="icon" href="src/img/icon.png">
+
+    <!-- Social Meta -->
+    <meta property="og:title" content="7SinCo | Encriptador de texto">
+    <meta property="og:description" content="Challenge ONE Principiante en Programación | Oracle Next Education">
+    <meta property="og:image" content="https://7sinco.github.io/encryptor/src/img/social-encryptor.png">
+    <meta property="og:image:secure_url" content="https://7sinco.github.io/encryptor/src/img/social-encryptor.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+
+    <!-- Titulo de la pagina -->
+    <title>HCristian | Encriptador de texto</title>
+</head>
+
+<body>
+
+    <main class="grid">
+
+        <div class="flex user padding-user">
+            <div>
+                <img class="logo" src="src/img/alura.png" alt="Alura">
+                <textarea class="user-text" name="" id="" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div>
+                <label for=""><span class="exclamation">&#33;</span> SOLO LETRAS MINUSCULAS Y SIN ACENTOS </label>
+                <div class="flex flex-button">
+                    <button type="button" onclick="encrypt()" class="button-blue">Cifrar</button>
+                    <button type="button" onclick="decrypt()" class="button-grey">Descifrar</button>
+                </div>
+            </div>
+        </div> <!-- User Input and Buttons -->
+
+        <div class="flex translation not-found padding-result">
+            <img src="src/img/not-found-cat.png" alt="Not Found">
+            <p class="bold empty">NINGÚN MENSAJE FUE ENCONTRADO</p>
+            <p class="empty-legend">INGRESA UN TEXTO PARA ENCRIPTAR O DESENCRIPTAR.</p>
+        </div> <!-- Traslation Not Found -->
+        <div class="flex translation text-found display-none padding-result">
+            <textarea class="inputCopy" name="" id="" placeholder="Resultado" disabled></textarea>
+            <button type="button" onclick="copy()" class="button-grey">Copiar</button>
+        </div> <!-- Result traslation -->
+
+    </main>
+
+    <footer>
+        <p>Hecho por <span class="bold">Cristian Alejandro Hernández Ordoñez  --- ORACLE Alura LATAM</span></p>
+        <div class="flex icons">
+            <a target="_blank" rel="noopener"
+                href="https://www.linkedin.com/in/cristian-h-12831b227/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" rel="noopener" href="https://github.com/Cristian1hernndz?tab=repositories"><i
+                    class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="src/js/app.js?v=10022499"></script>
+</body>
+
+</html>
